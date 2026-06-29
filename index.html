@@ -38,7 +38,7 @@
 
     <!-- Top Minimal Banner -->
     <div class="bg-black text-white text-center py-2.5 text-xs uppercase tracking-[0.2em] font-light">
-        Islandwide Delivery LKR 450.00 | Premium Wear
+        Islandwide Delivery LKR 450.00 | Premium Crafted Goods
     </div>
 
     <!-- Header / Navigation -->
@@ -81,7 +81,7 @@
             </div>
             <div class="relative group">
                 <div class="aspect-[4/5] overflow-hidden bg-gray-50 relative">
-                    <img id="heroImage" src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&q=80&w=1200" alt="Zellora Premium" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" onerror="this.src='https://placehold.co/800x1000/000000/ffffff?text=Zellora+Oversized'">
+                    <img id="heroImage" src="https://i.ibb.co/35y26mzs/f3bc84fb-e36d-4dbd-aea9-2334db7fa741.jpg" alt="Zellora Premium" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" onerror="this.src='https://placehold.co/800x1000/000000/ffffff?text=Zellora+Oversized'">
                 </div>
                 <div class="absolute bottom-4 left-4 bg-white p-4 max-w-[200px] border border-gray-100 hidden sm:block">
                     <p class="text-xs uppercase tracking-wider font-semibold">01 / Essential Oversized</p>
@@ -296,26 +296,6 @@
         </div>
     </footer>
 
-    <!-- Minimal Floating Admin Settings to configure store owner WhatsApp Number instantly -->
-    <div class="fixed bottom-4 left-4 z-40">
-        <button id="settingsBtn" onclick="toggleSettings()" class="bg-black text-white w-10 h-10 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform">
-            <i class="fa-solid fa-gear"></i>
-        </button>
-        <div id="settingsPanel" class="hidden mt-2 bg-white text-black p-4 border border-gray-200 max-w-[280px] shadow-2xl transition-all">
-            <h5 class="text-xs font-semibold uppercase tracking-wider border-b pb-2 mb-2">Store Configurations</h5>
-            <div class="space-y-3 text-xs">
-                <div>
-                    <label class="block text-[10px] text-gray-500 uppercase mb-1">WhatsApp Recipient Number</label>
-                    <input type="text" id="waNumberInput" value="94776374880" class="w-full border p-1 focus:outline-none" placeholder="e.g. 94776374880">
-                    <p class="text-[9px] text-gray-400 mt-1">Country code without '+'. Live verified phone: 94776374880</p>
-                </div>
-                <button onclick="saveSettings()" class="w-full bg-black text-white text-[10px] uppercase py-1.5 font-medium hover:bg-gray-800 transition-colors">
-                    Save Configurations
-                </button>
-            </div>
-        </div>
-    </div>
-
     <!-- Alert Message Component (Custom Luxury Alert instead of standard browser alert) -->
     <div id="toastMessage" class="fixed top-24 left-1/2 transform -translate-x-1/2 z-50 bg-black text-white px-6 py-3 text-xs uppercase tracking-widest hidden flex items-center space-x-2 transition-all duration-300">
         <span id="toastText">Setting saved successfully.</span>
@@ -356,10 +336,10 @@
             },
             {
                 id: "p3",
-                name: "Oversized Chaise Gains Black T-Shirt",
-                price: 2450,
+                name: "Chaise Gains Black T-Shirt",
+                price: 1450,
                 description: "Bold street aesthetic. Premium graphics crafted specifically for comfortable streetwear style.",
-                details: "High Quality Combed Cotton | Featuring Back Print",
+                details: "High Quality Combed Cotton | Custom Graphics | Featuring Back Print",
                 hasBackPrint: true,
                 images: [
                     "https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&q=80&w=800",
@@ -369,10 +349,10 @@
             },
             {
                 id: "p4",
-                name: "Oversized Chaise Gains White T-Shirt",
-                price: 2450,
+                name: "Chaise Gains White T-Shirt",
+                price: 1450,
                 description: "Bold clean graphic look. High fidelity detailing with heavy print design.",
-                details: "High Quality Combed Cotton | Featuring Back Print",
+                details: "High Quality Combed Cotton | Custom Graphics | Featuring Back Print",
                 hasBackPrint: true,
                 images: [
                     "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&q=80&w=800",
@@ -387,13 +367,6 @@
 
         // Initialize App on window load
         window.onload = function() {
-            // Check if user has saved custom whatsapp number
-            const savedNumber = localStorage.getItem("zellora_whatsapp");
-            if(savedNumber) {
-                STORE_WHATSAPP_NUMBER = savedNumber;
-                document.getElementById("waNumberInput").value = savedNumber;
-            }
-            
             // Initialize slide tracking
             PRODUCTS.forEach(p => {
                 productSliders[p.id] = 0; // Starts at first image
@@ -641,24 +614,6 @@ _Thank you for choosing Zellora Luxury!_`;
             window.open(whatsappUrl, '_blank');
             closeModal();
             showToast("Order compiled. Opening WhatsApp...");
-        }
-
-        // Custom Settings Panel logic
-        function toggleSettings() {
-            const panel = document.getElementById("settingsPanel");
-            panel.classList.toggle("hidden");
-        }
-
-        function saveSettings() {
-            const newNum = document.getElementById("waNumberInput").value.trim();
-            if (newNum) {
-                STORE_WHATSAPP_NUMBER = newNum;
-                localStorage.setItem("zellora_whatsapp", newNum);
-                showToast("WhatsApp configuration updated!");
-                document.getElementById("settingsPanel").classList.add("hidden");
-            } else {
-                showToast("Please enter a valid phone number.");
-            }
         }
 
         // Premium toast notifications
