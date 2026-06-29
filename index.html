@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zellora | Luxury In Every Thread</title>
+    <!-- Tailwind CSS for modern responsive utility classes -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for premium minimal look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <!-- FontAwesome for arrows and sleek icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+        }
+        .luxury-font {
+            font-family: 'Playfair Display', serif;
+        }
+        /* Custom scrollbar for modern sleek design */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #ffffff;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #000000;
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <!-- Top Minimal Banner -->
+    <div class="bg-black text-white text-center py-2 text-xs uppercase tracking-[0.2em]">
+        Islandwide Delivery LKR 450.00 | Premium Crafted Goods
+    </div>
+
+    <!-- Header / Navigation -->
+    <header class="border-b border-gray-100 sticky top-0 bg-white z-40 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="hidden md:flex space-x-8 text-xs uppercase tracking-[0.15em] font-medium">
+                <a href="#collection" class="hover:text-gray-500 transition-colors">Collection</a>
+                <a href="#about" class="hover:text-gray-500 transition-colors">Our Story</a>
+            </div>
+            
+            <div class="text-center">
+                <a href="#" class="inline-block">
+                    <h1 class="text-3xl md:text-4xl tracking-[0.25em] font-light uppercase luxury-font">ZELLORA</h1>
+                    <span class="block text-[8px] md:text-[10px] uppercase tracking-[0.4em] text-gray-400 mt-1 italic">Luxury in every thread</span>
+                </a>
+            </div>
+
+            <div class="flex items-center space-x-4">
+                <a href="#collection" class="bg-black text-white text-[10px] md:text-xs uppercase tracking-[0.2em] py-2 px-5 hover:bg-gray-800 transition-all">
+                    Shop Now
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-white border-b border-gray-100 py-12 md:py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6 md:pr-8">
+                <span class="text-xs uppercase tracking-[0.3em] text-gray-400 block">— NEW SEASON ARRIVAL</span>
+                <h2 class="text-4xl md:text-6xl luxury-font leading-tight font-light">Elegance is not being noticed, it is being remembered.</h2>
+                <p class="text-sm text-gray-500 leading-relaxed font-light max-w-lg">
+                    Discover our minimalist collection meticulously curated with elite fabrics and precise tailoring. Each piece from the Zellora collection is designed to provide ultimate comfort while highlighting absolute luxury.
+                </p>
+                <div class="pt-4">
+                    <a href="#collection" class="inline-block border-b border-black pb-2 text-xs uppercase tracking-[0.2em] hover:text-gray-500 hover:border-gray-500 transition-all">
+                        Explore Collection <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="relative group">
+                <div class="aspect-[4/5] overflow-hidden bg-gray-50 relative">
+                    <img id="heroImage" src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&q=80&w=1200" alt="Zellora Premium" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" onerror="this.src='https://placehold.co/800x1000/000000/ffffff?text=Zellora+Luxury'">
+                </div>
+                <div class="absolute bottom-4 left-4 bg-white p-4 max-w-[200px] border border-gray-100 hidden sm:block">
+                    <p class="text-xs uppercase tracking-wider font-semibold">01 / Pure Linen Collection</p>
+                    <p class="text-[10px] text-gray-400 mt-1">100% natural breathable flax yarn.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Collection Grid -->
+    <section id="collection" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-xl mx-auto mb-16">
+                <h3 class="text-2xl md:text-3xl luxury-font tracking-wide">The Signature Collection</h3>
+                <div class="h-[1px] w-20 bg-black mx-auto my-4"></div>
+                <p class="text-xs text-gray-400 uppercase tracking-[0.2em]">Exquisite designs tailored for the minimal enthusiast</p>
+            </div>
+
+            <!-- Dynamic Product Grid -->
+            <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
+                <!-- Products will be injected here via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Story section -->
+    <section id="about" class="py-20 bg-gray-50 border-t border-b border-gray-100">
+        <div class="max-w-4xl mx-auto px-4 text-center space-y-8">
+            <span class="text-xs uppercase tracking-[0.3em] text-gray-400">OUR PHILOSOPHY</span>
+            <h3 class="text-3xl md:text-4xl luxury-font font-light italic">"Luxury is in the details, crafted with pure intention."</h3>
+            <p class="text-sm text-gray-500 leading-relaxed font-light">
+                At Zellora, we believe that true luxury is quiet. It speaks through the weight of the drape, the texture of the weave, and the precision of the hem. We source the finest organic linen, heavy cotton silks, and pure wools to deliver clothing that transcends seasonal trends. Every single order is carefully hand-wrapped and delivered with luxury-standard packaging island-wide.
+            </p>
+            <div class="flex justify-center space-x-12 pt-4">
+                <div class="text-center">
+                    <span class="block text-2xl font-light">100%</span>
+                    <span class="text-[10px] uppercase tracking-wider text-gray-400">Premium Fabrics</span>
+                </div>
+                <div class="text-center">
+                    <span class="block text-2xl font-light">LKR 450</span>
+                    <span class="text-[10px] uppercase tracking-wider text-gray-400">Islandwide Delivery</span>
+                </div>
+                <div class="text-center">
+                    <span class="block text-2xl font-light">24/7</span>
+                    <span class="text-[10px] uppercase tracking-wider text-gray-400">WhatsApp Support</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Order Modal (Popup Card) -->
+    <div id="orderModal" class="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden opacity-0 transition-opacity duration-300">
+        <div class="bg-white text-black w-full max-w-xl rounded-none shadow-2xl overflow-hidden border border-gray-200 flex flex-col max-h-[90vh] transition-transform duration-300 transform scale-95" id="modalContainer">
+            <!-- Modal Header -->
+            <div class="p-6 border-b border-gray-100 flex items-center justify-between sticky top-0 bg-white z-10">
+                <div>
+                    <span class="text-[10px] uppercase tracking-[0.2em] text-gray-400">SECURE CHECKOUT VIA WHATSAPP</span>
+                    <h4 class="text-lg font-light luxury-font uppercase tracking-wide" id="modalProductTitle">Complete Your Order</h4>
+                </div>
+                <button onclick="closeModal()" class="text-gray-400 hover:text-black transition-colors focus:outline-none p-2">
+                    <i class="fa-solid fa-xmark text-xl"></i>
+                </button>
+            </div>
+
+            <!-- Modal Body (Scrollable) -->
+            <div class="p-6 overflow-y-auto space-y-6">
+                <!-- Product Preview in Modal -->
+                <div class="flex space-x-4 pb-6 border-b border-gray-100">
+                    <div class="w-20 h-24 bg-gray-50 flex-shrink-0 relative">
+                        <img id="modalProductImg" src="" alt="Selected Product" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex-grow flex flex-col justify-between">
+                        <div>
+                            <h5 class="text-sm font-semibold uppercase tracking-wider" id="modalProductTitleDetail">Linen Resort Shirt</h5>
+                            <p class="text-xs text-gray-500 mt-1" id="modalProductDescription">Pure linen breathable comfort fit.</p>
+                        </div>
+                        <div class="text-sm font-medium">
+                            Unit Price: LKR <span id="modalProductUnitPrice">0.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Customizer: Size & Quantity Selection -->
+                <div>
+                    <h5 class="text-xs uppercase tracking-widest font-semibold mb-3">1. Select Preferences</h5>
+                    <div class="grid grid-cols-2 gap-4">
+                        <!-- Size Dropdown/Buttons -->
+                        <div>
+                            <label class="block text-xs uppercase text-gray-400 mb-1.5 font-medium">Size <span class="text-red-500">*</span></label>
+                            <div class="flex space-x-2">
+                                <label class="flex-1 text-center cursor-pointer">
+                                    <input type="radio" name="orderSize" value="S" class="sr-only peer" checked>
+                                    <div class="border border-gray-200 py-2 text-xs font-semibold peer-checked:bg-black peer-checked:text-white peer-checked:border-black transition-all">S</div>
+                                </label>
+                                <label class="flex-1 text-center cursor-pointer">
+                                    <input type="radio" name="orderSize" value="M" class="sr-only peer">
+                                    <div class="border border-gray-200 py-2 text-xs font-semibold peer-checked:bg-black peer-checked:text-white peer-checked:border-black transition-all">M</div>
+                                </label>
+                                <label class="flex-1 text-center cursor-pointer">
+                                    <input type="radio" name="orderSize" value="L" class="sr-only peer">
+                                    <div class="border border-gray-200 py-2 text-xs font-semibold peer-checked:bg-black peer-checked:text-white peer-checked:border-black transition-all">L</div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Quantity Selector -->
+                        <div>
+                            <label class="block text-xs uppercase text-gray-400 mb-1.5 font-medium">Quantity <span class="text-red-500">*</span></label>
+                            <div class="flex items-center border border-gray-200">
+                                <button type="button" onclick="changeQty(-1)" class="px-3 py-2 text-gray-500 hover:text-black hover:bg-gray-50 transition-colors">-</button>
+                                <input type="number" id="orderQty" value="1" min="1" class="w-full text-center border-none text-xs font-semibold focus:outline-none focus:ring-0" readonly>
+                                <button type="button" onclick="changeQty(1)" class="px-3 py-2 text-gray-500 hover:text-black hover:bg-gray-50 transition-colors">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Shipping Form (Billing details) -->
+                <div class="space-y-4">
+                    <h5 class="text-xs uppercase tracking-widest font-semibold pb-1 border-b border-gray-100">2. Delivery Information</h5>
+                    
+                    <div>
+                        <label for="custName" class="block text-[11px] uppercase tracking-wider text-gray-500 mb-1">Full Name <span class="text-red-500">*</span></label>
+                        <input type="text" id="custName" class="w-full border-b border-gray-200 focus:border-black py-2 text-sm outline-none transition-colors" placeholder="e.g. Kasun Perera" required>
+                    </div>
+
+                    <div>
+                        <label for="custAddress" class="block text-[11px] uppercase tracking-wider text-gray-500 mb-1">Delivery Address <span class="text-red-500">*</span></label>
+                        <input type="text" id="custAddress" class="w-full border-b border-gray-200 focus:border-black py-2 text-sm outline-none transition-colors" placeholder="e.g. No. 45/1, Temple Road" required>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label for="custCity" class="block text-[11px] uppercase tracking-wider text-gray-500 mb-1">City <span class="text-red-500">*</span></label>
+                            <input type="text" id="custCity" class="w-full border-b border-gray-200 focus:border-black py-2 text-sm outline-none transition-colors" placeholder="e.g. Colombo 07" required>
+                        </div>
+                        <div>
+                            <label for="custPhone" class="block text-[11px] uppercase tracking-wider text-gray-500 mb-1">Phone Number <span class="text-red-500">*</span></label>
+                            <input type="tel" id="custPhone" class="w-full border-b border-gray-200 focus:border-black py-2 text-sm outline-none transition-colors" placeholder="e.g. 0771234567" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cost Calculation / Summary -->
+                <div class="bg-gray-50 p-4 border border-gray-100 space-y-2">
+                    <h5 class="text-xs uppercase tracking-wider font-semibold mb-2 text-gray-700">Order Cost Summary</h5>
+                    <div class="flex justify-between text-xs text-gray-600">
+                        <span>Items Subtotal:</span>
+                        <span>LKR <span id="summarySubtotal">0.00</span></span>
+                    </div>
+                    <div class="flex justify-between text-xs text-gray-600">
+                        <span>Island-wide Delivery:</span>
+                        <span>LKR 450.00</span>
+                    </div>
+                    <div class="h-[1px] bg-gray-200 my-2"></div>
+                    <div class="flex justify-between text-sm font-semibold text-black">
+                        <span>Estimated Total:</span>
+                        <span>LKR <span id="summaryTotal">0.00</span></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Footer (Confirm Buttons) -->
+            <div class="p-6 border-t border-gray-100 bg-white sticky bottom-0 z-10">
+                <button type="button" onclick="submitOrder()" class="w-full bg-black text-white text-xs uppercase tracking-[0.2em] py-4 hover:bg-gray-800 transition-colors flex items-center justify-center space-x-2">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Place Order via WhatsApp</span>
+                </button>
+                <p class="text-center text-[10px] text-gray-400 mt-2">
+                    Clicking this will generate a clean order message template and direct you to WhatsApp instantly.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Brand Footer -->
+    <footer class="bg-black text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div class="md:col-span-2 space-y-4">
+                <h3 class="text-2xl luxury-font tracking-[0.25em] font-light">ZELLORA</h3>
+                <p class="text-xs text-gray-400 tracking-wider uppercase">Luxury in every thread</p>
+                <p class="text-sm text-gray-400 max-w-sm leading-relaxed font-light">
+                    An elegant, ultra-minimal apparel line engineered for high comfort and luxurious silhouettes. Exclusively hand-crafted garments delivered country-wide.
+                </p>
+            </div>
+            <div>
+                <h4 class="text-xs uppercase tracking-widest text-gray-300 font-semibold mb-4">Customer Care</h4>
+                <ul class="space-y-2 text-sm text-gray-400 font-light">
+                    <li><a href="#about" class="hover:text-white transition-colors">About Us</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Islandwide Delivery Policy</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Return Policy</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Size Guide</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-xs uppercase tracking-widest text-gray-300 font-semibold mb-4">Store Location</h4>
+                <p class="text-sm text-gray-400 leading-relaxed font-light">
+                    Zellora Atelier,<br>
+                    Colombo, Sri Lanka.<br>
+                    <span class="block mt-2 font-medium">WhatsApp Support: 24/7 Available</span>
+                </p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-gray-900 text-center text-xs text-gray-500 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>&copy; 2026 ZELLORA Luxury. All Rights Reserved.</p>
+            <div class="flex space-x-4">
+                <a href="#" class="text-gray-500 hover:text-white transition-colors"><i class="fa-brands fa-instagram text-base"></i></a>
+                <a href="#" class="text-gray-500 hover:text-white transition-colors"><i class="fa-brands fa-facebook text-base"></i></a>
+                <a href="#" class="text-gray-500 hover:text-white transition-colors"><i class="fa-brands fa-pinterest text-base"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Minimal Floating Admin Settings to configure store owner WhatsApp Number instantly -->
+    <div class="fixed bottom-4 left-4 z-40">
+        <button id="settingsBtn" onclick="toggleSettings()" class="bg-black text-white w-10 h-10 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform">
+            <i class="fa-solid fa-gear"></i>
+        </button>
+        <div id="settingsPanel" class="hidden mt-2 bg-white text-black p-4 border border-gray-200 max-w-[280px] shadow-2xl transition-all">
+            <h5 class="text-xs font-semibold uppercase tracking-wider border-b pb-2 mb-2">Store Configurations</h5>
+            <div class="space-y-3 text-xs">
+                <div>
+                    <label class="block text-[10px] text-gray-500 uppercase mb-1">WhatsApp Recipient Number</label>
+                    <input type="text" id="waNumberInput" value="94771234567" class="w-full border p-1 focus:outline-none" placeholder="e.g. 94771234567">
+                    <p class="text-[9px] text-gray-400 mt-1">Include country code without '+'. e.g. Sri Lanka (94771234567)</p>
+                </div>
+                <button onclick="saveSettings()" class="w-full bg-black text-white text-[10px] uppercase py-1.5 font-medium hover:bg-gray-800 transition-colors">
+                    Save Configurations
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Alert Message Component (Custom Luxury Alert instead of standard browser alert) -->
+    <div id="toastMessage" class="fixed top-24 left-1/2 transform -translate-x-1/2 z-50 bg-black text-white px-6 py-3 text-xs uppercase tracking-widest hidden flex items-center space-x-2 transition-all duration-300">
+        <span id="toastText">Setting saved successfully.</span>
+    </div>
+
+    <script>
+        // Target WhatsApp number for receiving store orders
+        let STORE_WHATSAPP_NUMBER = "94771234567"; // Default demo number
+        const DELIVERY_FEE = 450;
+
+        // Custom curated catalog item dataset with multiple image arrays
+        const PRODUCTS = [
+            {
+                id: "p1",
+                name: "The Linen Resort Shirt",
+                price: 5200,
+                description: "Handcrafted from pure European flax linen. Soft washed finish with single chest pocket detail.",
+                images: [
+                    "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&q=80&w=800",
+                    "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&q=80&w=800",
+                    "https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&q=80&w=800"
+                ]
+            },
+            {
+                id: "p2",
+                name: "Silk-Cotton Knit Polo",
+                price: 6800,
+                description: "Knitted polo in an ultra-breathable cotton and mulberry silk blend. Features premium horn buttons.",
+                images: [
+                    "https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&q=80&w=800",
+                    "https://images.unsplash.com/photo-1620012253295-c05cb127c243?auto=format&fit=crop&q=80&w=800",
+                    "https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?auto=format&fit=crop&q=80&w=800"
+                ]
+            },
+            {
+                id: "p3",
+                name: "Pleated Luxury Trousers",
+                price: 7900,
+                description: "Double pleated relaxed-fit trousers tailored from breathable high-density worsted wool and silk threads.",
+                images: [
+                    "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&q=80&w=800",
+                    "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&q=80&w=800",
+                    "https://images.unsplash.com/photo-1479064555552-3ef4979f8908?auto=format&fit=crop&q=80&w=800"
+                ]
+            },
+            {
+                id: "p4",
+                name: "Minimalist Linen Silhouette Dress",
+                price: 9200,
+                description: "Clean flowing lines designed for breezy, sophisticated comfort. Cut from pre-washed linen-cotton blend.",
+                images: [
+                    "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&q=80&w=800",
+                    "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&q=80&w=800",
+                    "https://images.unsplash.com/photo-1618244972963-dbee1a7edc95?auto=format&fit=crop&q=80&w=800"
+                ]
+            },
+            {
+                id: "p5",
+                name: "Heavyweight Cotton Overshirt",
+                price: 6400,
+                description: "Structured luxury utility jacket woven with premium extra-long staple twill cotton for absolute durability.",
+                images: [
+                    "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=800",
+                    "https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?auto=format&fit=crop&q=80&w=800"
+                ]
+            },
+            {
+                id: "p6",
+                name: "Essential Luxury Linen Shorts",
+                price: 4500,
+                description: "Laidback luxury shorts featuring clean drawstring waistbands, deep pockets, and flawless tailored hems.",
+                images: [
+                    "https://images.unsplash.com/photo-1591195853828-11db59a44f6b?auto=format&fit=crop&q=80&w=800",
+                    "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&q=80&w=800"
+                ]
+            }
+        ];
+
+        // Track current slider image indexes for each product
+        let productSliders = {};
+
+        // Initialize App on window load
+        window.onload = function() {
+            // Check if user has saved custom whatsapp number
+            const savedNumber = localStorage.getItem("zellora_whatsapp");
+            if(savedNumber) {
+                STORE_WHATSAPP_NUMBER = savedNumber;
+                document.getElementById("waNumberInput").value = savedNumber;
+            }
+            
+            // Initialize slide tracking
+            PRODUCTS.forEach(p => {
+                productSliders[p.id] = 0; // Starts at first image
+            });
+
+            renderProducts();
+        };
+
+        // Render product cards inside grid
+        function renderProducts() {
+            const grid = document.getElementById("productGrid");
+            grid.innerHTML = "";
+
+            PRODUCTS.forEach(product => {
+                const card = document.createElement("div");
+                card.className = "group flex flex-col justify-between space-y-4 bg-white";
+                
+                // Get current image index
+                const currentImgIdx = productSliders[product.id];
+                const activeImgUrl = product.images[currentImgIdx];
+
+                card.innerHTML = `
+                    <div class="relative aspect-[3/4] overflow-hidden bg-gray-50 flex items-center justify-center">
+                        <!-- Image Carousel with Fade effect -->
+                        <img id="img-${product.id}" src="${activeImgUrl}" alt="${product.name}" class="w-full h-full object-cover transition-opacity duration-300" onerror="this.src='https://placehold.co/600x800/000000/ffffff?text=Product'">
+                        
+                        <!-- Navigation Arrows -->
+                        <div class="absolute inset-x-0 top-1/2 -translate-y-1/2 px-4 flex justify-between pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <button onclick="changeSlide('${product.id}', -1, event)" class="pointer-events-auto bg-white/90 text-black w-8 h-8 rounded-full flex items-center justify-center hover:bg-black hover:text-white shadow-sm transition-all focus:outline-none">
+                                <i class="fa-solid fa-chevron-left text-xs"></i>
+                            </button>
+                            <button onclick="changeSlide('${product.id}', 1, event)" class="pointer-events-auto bg-white/90 text-black w-8 h-8 rounded-full flex items-center justify-center hover:bg-black hover:text-white shadow-sm transition-all focus:outline-none">
+                                <i class="fa-solid fa-chevron-right text-xs"></i>
+                            </button>
+                        </div>
+
+                        <!-- Image Indicators -->
+                        <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-1.5 pointer-events-none">
+                            ${product.images.map((img, i) => `
+                                <span class="w-1.5 h-1.5 rounded-full ${i === currentImgIdx ? 'bg-black' : 'bg-gray-300'} transition-colors duration-300"></span>
+                            `).join('')}
+                        </div>
+                    </div>
+
+                    <div class="space-y-1">
+                        <div class="flex justify-between items-start">
+                            <h4 class="text-sm font-medium tracking-wide text-gray-900 luxury-font">${product.name}</h4>
+                            <span class="text-xs font-semibold whitespace-nowrap">LKR ${product.price.toLocaleString()}.00</span>
+                        </div>
+                        <p class="text-xs text-gray-400 line-clamp-2">${product.description}</p>
+                    </div>
+
+                    <div>
+                        <button onclick="openOrderModal('${product.id}')" class="w-full text-center border border-black hover:bg-black hover:text-white text-xs uppercase tracking-widest py-3 transition-colors duration-300">
+                            Order Now
+                        </button>
+                    </div>
+                `;
+                
+                grid.appendChild(card);
+            });
+        }
+
+        // Change current active slide of specific product
+        function changeSlide(productId, direction, event) {
+            // Prevent event bubbling to avoid conflicts
+            event.preventDefault();
+            event.stopPropagation();
+
+            const product = PRODUCTS.find(p => p.id === productId);
+            if (!product) return;
+
+            let currentIndex = productSliders[productId];
+            const totalImages = product.images.length;
+
+            // Calculate new index
+            currentIndex += direction;
+            if (currentIndex < 0) {
+                currentIndex = totalImages - 1;
+            } else if (currentIndex >= totalImages) {
+                currentIndex = 0;
+            }
+
+            productSliders[productId] = currentIndex;
+            
+            // Re-render specifically this card's image & indicators dynamically for speed
+            const imgElement = document.getElementById(`img-${productId}`);
+            if (imgElement) {
+                imgElement.style.opacity = "0.2";
+                setTimeout(() => {
+                    imgElement.src = product.images[currentIndex];
+                    imgElement.style.opacity = "1";
+                }, 100);
+            }
+            
+            // Complete quick visual rerender of indicators or card layout
+            renderProducts();
+        }
+
+        // Global variables for selected item in Checkout Modal
+        let activeProduct = null;
+        let selectedQty = 1;
+
+        function openOrderModal(productId) {
+            const product = PRODUCTS.find(p => p.id === productId);
+            if (!product) return;
+
+            activeProduct = product;
+            selectedQty = 1;
+
+            // Setup Modal Fields
+            document.getElementById("modalProductTitle").innerText = "Order: " + product.name;
+            document.getElementById("modalProductTitleDetail").innerText = product.name;
+            document.getElementById("modalProductDescription").innerText = product.description;
+            document.getElementById("modalProductUnitPrice").innerText = product.price.toLocaleString() + ".00";
+            
+            // Load current active image of this item
+            const currentImgIdx = productSliders[productId];
+            document.getElementById("modalProductImg").src = product.images[currentImgIdx];
+
+            // Reset Form Inputs
+            document.getElementById("orderQty").value = selectedQty;
+            document.getElementById("custName").value = "";
+            document.getElementById("custAddress").value = "";
+            document.getElementById("custCity").value = "";
+            document.getElementById("custPhone").value = "";
+            
+            // Set first radio button (S) checked
+            const sizeRadios = document.getElementsByName("orderSize");
+            if (sizeRadios.length > 0) sizeRadios[0].checked = true;
+
+            // Calculate totals
+            updateCostSummary();
+
+            // Display Modal
+            const modal = document.getElementById("orderModal");
+            const container = document.getElementById("modalContainer");
+            
+            modal.classList.remove("hidden");
+            // Small timeout to allow transition styles to work
+            setTimeout(() => {
+                modal.classList.remove("opacity-0");
+                container.classList.remove("scale-95");
+                container.classList.add("scale-100");
+            }, 10);
+        }
+
+        function closeModal() {
+            const modal = document.getElementById("orderModal");
+            const container = document.getElementById("modalContainer");
+            
+            modal.classList.add("opacity-0");
+            container.classList.add("scale-95");
+            container.classList.remove("scale-100");
+
+            setTimeout(() => {
+                modal.classList.add("hidden");
+            }, 300);
+        }
+
+        // Quantity modifier helper
+        function changeQty(amount) {
+            let newQty = selectedQty + amount;
+            if (newQty < 1) newQty = 1;
+            selectedQty = newQty;
+            document.getElementById("orderQty").value = selectedQty;
+            updateCostSummary();
+        }
+
+        // Recalculates Subtotal + Delivery LKR 450
+        function updateCostSummary() {
+            if (!activeProduct) return;
+            
+            const subtotal = activeProduct.price * selectedQty;
+            const grandTotal = subtotal + DELIVERY_FEE;
+
+            document.getElementById("summarySubtotal").innerText = subtotal.toLocaleString() + ".00";
+            document.getElementById("summaryTotal").innerText = grandTotal.toLocaleString() + ".00";
+        }
+
+        // Compiles and redirects order to WhatsApp with custom templates
+        function submitOrder() {
+            if (!activeProduct) return;
+
+            // Fetch User Details
+            const name = document.getElementById("custName").value.trim();
+            const address = document.getElementById("custAddress").value.trim();
+            const city = document.getElementById("custCity").value.trim();
+            const phone = document.getElementById("custPhone").value.trim();
+
+            // Fetch selected size from radio inputs
+            let size = "S";
+            const sizeRadios = document.getElementsByName("orderSize");
+            for (let r of sizeRadios) {
+                if (r.checked) {
+                    size = r.value;
+                    break;
+                }
+            }
+
+            // Simple client side form validation
+            if (!name || !address || !city || !phone) {
+                showToast("Please fill in all delivery details.");
+                return;
+            }
+
+            // Pricing Calculations
+            const subtotal = activeProduct.price * selectedQty;
+            const grandTotal = subtotal + DELIVERY_FEE;
+
+            // Format WhatsApp Message with rich text blocks
+            const message = `*NEW ORDER - ZELLORA LUXURY*
+----------------------------------------
+*Product:* ${activeProduct.name}
+*Size:* ${size}
+*Quantity:* ${selectedQty}
+*Unit Price:* LKR ${activeProduct.price.toLocaleString()}.00
+
+*Delivery Information:*
+*Name:* ${name}
+*Address:* ${address}
+*City:* ${city}
+*Phone:* ${phone}
+
+*Pricing Details:*
+*Subtotal:* LKR ${subtotal.toLocaleString()}.00
+*Islandwide Delivery:* LKR ${DELIVERY_FEE.toLocaleString()}.00
+*Total Amount:* LKR ${grandTotal.toLocaleString()}.00
+----------------------------------------
+_Thank you for choosing Zellora Luxury!_`;
+
+            // Encode message for URI
+            const encodedMessage = encodeURIComponent(message);
+            const whatsappUrl = `https://api.whatsapp.com/send?phone=${STORE_WHATSAPP_NUMBER}&text=${encodedMessage}`;
+
+            // Open WhatsApp link
+            window.open(whatsappUrl, '_blank');
+            closeModal();
+            showToast("Order compiled. Opening WhatsApp...");
+        }
+
+        // Custom Settings Panel logic
+        function toggleSettings() {
+            const panel = document.getElementById("settingsPanel");
+            panel.classList.toggle("hidden");
+        }
+
+        function saveSettings() {
+            const newNum = document.getElementById("waNumberInput").value.trim();
+            if (newNum) {
+                STORE_WHATSAPP_NUMBER = newNum;
+                localStorage.setItem("zellora_whatsapp", newNum);
+                showToast("WhatsApp configuration updated!");
+                document.getElementById("settingsPanel").classList.add("hidden");
+            } else {
+                showToast("Please enter a valid phone number.");
+            }
+        }
+
+        // Premium toast notifications
+        function showToast(text) {
+            const toast = document.getElementById("toastMessage");
+            document.getElementById("toastText").innerText = text;
+            toast.classList.remove("hidden");
+            setTimeout(() => {
+                toast.classList.add("hidden");
+            }, 3500);
+        }
+    </script>
+</body>
+</html>
